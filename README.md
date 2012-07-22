@@ -16,6 +16,8 @@ Maven
 
 ## Usage
 
+The document must start with a map describing the document metadata which is followed by one or more document elements, note: only spaces and new lines are allowed between elements.
+
 ```java
 String json = "{\"font\": {\"size\": 20}} \"stuff\" [\"paragraph\", \"foo bar\"]";
 JsonPDF.writePDFToFile(json, "doc.pdf");

@@ -10,7 +10,7 @@ Maven
 <dependency>
   <groupId>json-to-pdf</groupId>
   <artifactId>json-to-pdf</artifactId>
-  <version>0.5</version>
+  <version>0.6.1</version>
 </dependency>
 ```
 

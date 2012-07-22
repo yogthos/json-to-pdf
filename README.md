@@ -1,6 +1,10 @@
 # json-to-pdf
 
-A wrapper library for [clj-pdf](https://github.com/yogthos/clj-pdf) which allows easy generation of PDF documents from JSON markup. Example document can be viewed [here](https://docs.google.com/viewer?url=https://github.com/yogthos/json-to-pdf/raw/master/example.pdf).
+This project aims to provide a way to declaratively generate PDF reports using JSON notation. 
+This library is a wrapper library for [clj-pdf](https://github.com/yogthos/clj-pdf). 
+
+An example document can be viewed [here](https://docs.google.com/viewer?url=https://github.com/yogthos/json-to-pdf/raw/master/example.pdf). 
+ 
 
 # Installation
  
@@ -16,7 +20,7 @@ Maven
 
 ## Usage
 
-The document must start with a map describing the document metadata which is followed by one or more document elements, note: only spaces and new lines are allowed between elements.
+The document must start with a map describing the document metadata which is followed by one or more document elements, **note:** only spaces and new lines are allowed between elements.
 
 ```java
 String json = "{\"font\": {\"size\": 20}} \"stuff\" [\"paragraph\", \"foo bar\"]";

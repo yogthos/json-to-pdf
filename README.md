@@ -1,6 +1,6 @@
 # json-to-pdf
 
-A wrapper library for [clj-pdf](https://github.com/yogthos/clj-pdf) which allows easy generation of PDF documents from JSON markup.
+A wrapper library for [clj-pdf](https://github.com/yogthos/clj-pdf) which allows easy generation of PDF documents from JSON markup. Example document can be viewed [here](https://docs.google.com/viewer?url=https://github.com/yogthos/json-to-pdf/raw/master/example.pdf).
 
 # Installation
  

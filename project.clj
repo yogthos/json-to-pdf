@@ -4,6 +4,6 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.4.0"]
-                 [clj-pdf "0.9.7"]
+                 [clj-pdf "1.0.2"]
                  [org.clojure/data.json "0.1.2"]]
   :aot  [json-to-pdf.core])

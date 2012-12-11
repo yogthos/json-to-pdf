@@ -10,7 +10,15 @@ An example document can be viewed [here](https://docs.google.com/viewer?url=http
  
 Maven
 
+json-to-pdf is available from the clojars repo
 ```xml
+<repositories>
+<repository>
+  <id>clojars.org</id>
+  <url>http://clojars.org/repo</url>
+</repository>
+</repositories>
+
 <dependency>
   <groupId>json-to-pdf</groupId>
   <artifactId>json-to-pdf</artifactId>

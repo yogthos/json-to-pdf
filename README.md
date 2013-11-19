@@ -22,7 +22,7 @@ json-to-pdf is available from the clojars repo
 <dependency>
   <groupId>json-to-pdf</groupId>
   <artifactId>json-to-pdf</artifactId>
-  <version>0.6.4</version>
+  <version>0.6.5</version>
 </dependency>
 ```
 

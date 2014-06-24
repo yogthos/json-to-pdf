@@ -32,10 +32,21 @@ json-to-pdf is available from the [Clojars](https://clojars.org/) repo:
 JSON documents are represented by an array containing one or more elements. The first element in the document must be a map containing the metadata.
 
 ```java
-String json = "[{\"font\": {\"size\": 20}}, \"stuff\", [\"paragraph\", \"foo bar\"]]";
+import org.yogthos.JsonPDF;
 
-JsonPDF.writePDFToFile(json, "doc.pdf");
-JsonPDF.writePDFToStream(json, new FileOutputStream("doc.pdf"));
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+public class Main {
+    public static void main(String[] args) {
+        JsonPDF.writeToFile("[{}, [\"paragraph\", \"hello world\"]]", "out.pdf");
+        try {
+            JsonPDF.writeToStream("[{}, [\"paragraph\", \"hello world\"]]", new FileOutputStream("outstream.pdf"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+}
 ```
 
 ## Document Format

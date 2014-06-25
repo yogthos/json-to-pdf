@@ -34,19 +34,18 @@ JSON documents are represented by an array containing one or more elements. The 
 ```java
 import org.yogthos.JsonPDF;
 
-import java.io.FileNotFoundException;
 import java.io.ByteArrayInputStream;
 import java.io.FileOutputStream;
 
 public class Main {
-    public static void main(String[] args) {
-        JsonPDF.writeToFile("[{}, [\"paragraph\", \"hello world\"]]", "out.pdf");
-        try {
-            JsonPDF.writeToStream(new ByteArrayInputStream("[{}, [\"paragraph\", \"hello world\"]]".getBytes()),
+    public static void main(String[] args) throws Exception {
+        String jsonDoc1 = "[{}, [\"paragraph\", \"hello world\"]]";
+        String jsonDoc2 = "[{\"pages\":true,\"orientation\":\"landscape\"}, [\"paragraph\", \"hello world\"]]";
+
+        JsonPDF.writeToFile(jsonDoc1, "out.pdf");
+
+        JsonPDF.writeToStream(new ByteArrayInputStream(jsonDoc2.getBytes()),
                                   new FileOutputStream("outstream.pdf"));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
     }
 }
 ```

@@ -23,7 +23,7 @@ json-to-pdf is available from the [Clojars](https://clojars.org/) repo:
 <dependency>
   <groupId>json-to-pdf</groupId>
   <artifactId>json-to-pdf</artifactId>
-  <version>0.6.6</version>
+  <version>0.6.7</version>
 </dependency>
 ```
 
@@ -35,13 +35,15 @@ JSON documents are represented by an array containing one or more elements. The 
 import org.yogthos.JsonPDF;
 
 import java.io.FileNotFoundException;
+import java.io.ByteArrayInputStream;
 import java.io.FileOutputStream;
 
 public class Main {
     public static void main(String[] args) {
         JsonPDF.writeToFile("[{}, [\"paragraph\", \"hello world\"]]", "out.pdf");
         try {
-            JsonPDF.writeToStream("[{}, [\"paragraph\", \"hello world\"]]", new FileOutputStream("outstream.pdf"));
+            JsonPDF.writeToStream(new ByteArrayInputStream("[{}, [\"paragraph\", \"hello world\"]]".getBytes()),
+                                  new FileOutputStream("outstream.pdf"));
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

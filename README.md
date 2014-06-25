@@ -45,7 +45,7 @@ public class Main {
         JsonPDF.writeToFile(jsonDoc1, "out.pdf");
 
         JsonPDF.writeToStream(new ByteArrayInputStream(jsonDoc2.getBytes()),
-                                  new FileOutputStream("outstream.pdf"));
+                              new FileOutputStream("outstream.pdf"));
     }
 }
 ```

@@ -8,7 +8,13 @@ An example document can be viewed [here](https://docs.google.com/viewer?url=http
 
 # Installation
 
-Maven
+### Gradle
+
+```
+compile "json-to-pdf:json-to-pdf:0.6.7"
+```
+
+### Maven
 
 json-to-pdf is available from the [Clojars](https://clojars.org/) repo:
 

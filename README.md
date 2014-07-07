@@ -262,6 +262,7 @@ images larger than the page margins will automatically be scaled to fit.
 
 optional metadata:
 
+* "scale": number - percentage relative to page size
 * "xscale": number - percentage relative to page size
 * "yscale": num - percentage relative to page size
 * "width": num - set width for image: overrides scaling

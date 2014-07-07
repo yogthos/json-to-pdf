@@ -606,7 +606,8 @@ metadata:
 * "time-series": - only used in line chart
 * "time-format": - can optionally be used with time-series to provide custom date formatting, defaults to "yyyy-MM-dd-HH:mm:ss"
 * "horizontal":  - can be used with bar charts and line charts, not supported by time series
-* "title":
+* "background":  - a vector of [r g b] integer values
+* "title":       - the title of the chart
 
 additional image metadata
 
@@ -625,6 +626,7 @@ additional image metadata
 ["chart",
  {"type":"bar-chart",
   "title":"Bar Chart",
+  "background":[255,255,255],
   "x-label":"Items",
   "y-label":"Quality"}, [2, "Foo"], [4, "Bar"], [10, "Baz"]]
 

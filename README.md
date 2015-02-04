@@ -412,6 +412,7 @@ content:
 ["phrase", ["chunk", {"style":"italic"}, "chunk one"],
  ["chunk", {"size":20}, "Big text"], "some other text"]
 
+["phrase", "styles" : ["italic", "underline"]]
 ```
 
 #### Section

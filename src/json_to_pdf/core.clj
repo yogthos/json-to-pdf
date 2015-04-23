@@ -19,4 +19,4 @@
   (parse json parse-string filename))
 
 (defn -writeToStream [^InputStream json ^OutputStream out]
-  (parse json parse-stream out))
+  (parse json #(parse-stream (reader %1) %2) out))

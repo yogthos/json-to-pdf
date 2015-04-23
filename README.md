@@ -11,7 +11,7 @@ An example document can be viewed [here](https://docs.google.com/viewer?url=http
 ### Gradle
 
 ```
-compile "json-to-pdf:json-to-pdf:0.7.1"
+compile "json-to-pdf:json-to-pdf:0.7.2"
 ```
 
 ### Maven
@@ -29,7 +29,7 @@ json-to-pdf is available from the [Clojars](https://clojars.org/) repo:
 <dependency>
   <groupId>json-to-pdf</groupId>
   <artifactId>json-to-pdf</artifactId>
-  <version>0.7.1</version>
+  <version>0.7.2</version>
 </dependency>
 ```
 

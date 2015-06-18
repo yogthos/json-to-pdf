@@ -323,7 +323,7 @@ optional metadata:
 * "dingbats-char-num":   boolean
 * "dingbatsnumber":      boolean
 * "dingbatsnumber-type": boolean
-
+* "symbol"               string (specifies the symbol to use for list items, defaults to "-")
 content:
 
 * strings, phrases, or chunks

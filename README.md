@@ -11,6 +11,13 @@ An example document can be viewed [here](https://docs.google.com/viewer?url=http
 ### Gradle
 
 ```
+repositories {
+    jcenter()
+    maven {
+        url 'http://clojars.org/repo'
+    } 
+}
+
 compile "json-to-pdf:json-to-pdf:0.7.5"
 ```
 

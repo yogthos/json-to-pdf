@@ -1,4 +1,4 @@
-(defproject json-to-pdf "0.7.5"
+(defproject json-to-pdf "0.7.6"
   :description "a JVM library for generating PDF documents given JSON markup"
   :url "https://github.com/yogthos/json-to-pdf"
   :license {:name "Eclipse Public License"

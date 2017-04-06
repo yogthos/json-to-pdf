@@ -18,7 +18,7 @@ repositories {
     } 
 }
 
-compile "json-to-pdf:json-to-pdf:0.7.5"
+compile "json-to-pdf:json-to-pdf:0.7.8"
 ```
 
 ### Maven
@@ -36,7 +36,7 @@ json-to-pdf is available from the [Clojars](https://clojars.org/) repo:
 <dependency>
   <groupId>json-to-pdf</groupId>
   <artifactId>json-to-pdf</artifactId>
-  <version>0.7.5</version>
+  <version>0.7.8</version>
 </dependency>
 ```
 

@@ -5,9 +5,9 @@
             [clojure.java.io :refer [reader]])
   (:import [java.io InputStream OutputStream])
   (:gen-class
-   :name org.yogthos.JsonPDF
-   :methods [#^{:static true} [writeToFile [String String] void]
-             #^{:static true} [writeToStream [java.io.InputStream java.io.OutputStream] void]]))
+    :name org.yogthos.JsonPDF
+    :methods [#^{:static true} [writeToFile [String String] void]
+              #^{:static true} [writeToStream [java.io.InputStream java.io.OutputStream] void]]))
 
 (defn fix-pagebreaks [doc]
   (prewalk #(if (= % ["pagebreak"]) [:pagebreak] %) doc))
@@ -19,4 +19,4 @@
   (parse json parse-string filename))
 
 (defn -writeToStream [^InputStream json ^OutputStream out]
-  (parse json #(parse-stream (reader %1) %2) out))
+  (parse json #(vec (parse-stream (reader %1) %2)) out))

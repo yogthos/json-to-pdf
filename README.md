@@ -39,6 +39,7 @@ json-to-pdf is available from the [Clojars](https://clojars.org/) repo:
   <version>0.7.8</version>
 </dependency>
 ```
+see [here](https://github.com/yogthos/json-to-pdf-example) for a complete sample project
 
 ## Usage
 

@@ -4,11 +4,11 @@
             [cheshire.core :refer [parse-string parse-stream]]
             [clojure.java.io :refer [reader]])
   (:import [java.io InputStream OutputStream]
-           cljpdf.text.pdf.PdfPageEventHelper)
+           com.lowagie.text.pdf.PdfPageEventHelper)
   (:gen-class
-    :name org.yogthos.JsonPDF
-    :methods [#^{:static true} [writeToFile [String String cljpdf.text.pdf.PdfPageEventHelper] void]
-              #^{:static true} [writeToStream [java.io.InputStream java.io.OutputStream cljpdf.text.pdf.PdfPageEventHelper] void]]))
+   :name org.yogthos.JsonPDF
+   :methods [#^{:static true} [writeToFile [String String com.lowagie.text.pdf.PdfPageEventHelper] void]
+             #^{:static true} [writeToStream [java.io.InputStream java.io.OutputStream com.lowagie.text.pdf.PdfPageEventHelper] void]]))
 
 (defn fix-pagebreaks [doc]
   (vec (prewalk #(if (= % ["pagebreak"]) [:pagebreak] %) doc)))

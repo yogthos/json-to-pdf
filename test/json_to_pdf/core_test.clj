@@ -3,7 +3,7 @@
             [json-to-pdf.core :refer :all]
             [cheshire.core :refer [generate-string]])
   (:import
-    cljpdf.text.pdf.PdfPageEventHelper))
+   com.lowagie.text.pdf.PdfPageEventHelper))
 
 (comment
   (-writeToFile
@@ -16,8 +16,8 @@
         (println "starting page")
         (.addImage (.getDirectContent writer)
                    (doto
-                     (cljpdf.text.Image/getInstance
-                       (.getPath (new java.io.File (str "test" java.io.File/separator "mandelbrot.jpg"))))
+                       (com.lowagie.text.Image/getInstance
+                         (.getPath (new java.io.File (str "test" java.io.File/separator "mandelbrot.jpg"))))
                      (.scaleToFit 300 300)
                      (.setAbsolutePosition 100 100)))
         (println "page start:" doc))))
